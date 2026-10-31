@@ -213,6 +213,6 @@ python cover.py --json /tmp/letter.json
 | `ValueError: Output path is a directory` | `path` points at a folder | Use a full filename |
 | PDF has stray `&amp;` / `&lt;` | Text was already HTML-escaped | Pass raw text — escaping is automatic |
 """
-path = Path("/mnt/data/cover_py_usage_guide.md")
+path = Path("cover_py_usage_guide.md")
 path.write_text(content, encoding="utf-8")
 print(f"Created {path} ({path.stat().st_size} bytes)")
